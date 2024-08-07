@@ -19,25 +19,66 @@
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-    </style>  
+    </style>
 </head>
 
 <body class="font-manrope">
 
+    <!-- Header section -->
+    <header class="container">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    <div class="flex items-center gap-3 drop-shadow-lg bg-white p-5 w-64 -mt-14">
+                        <div class="rating rating-lg">
+                            <input
+                              type="radio"
+                              name="rating-8"
+                              class="mask mask-star-2 bg-orange-400"
+                              checked="checked" />
+                          </div>
+                          <div>
+                            <h3>5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                          </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The
+                        <br> Tea House</h1>
+                    <p class="py-6">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
