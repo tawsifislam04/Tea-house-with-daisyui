@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Tailwind custom color -->
   <script>
     tailwind.config = {
@@ -279,7 +282,7 @@
           <img src="images/cup.png" alt="">
           <div class="flex mt-5 flex-col lg:flex-row gap-2 lg:gap-10 items-start lg:items-center">
             <p>Ready to get strated?</p>
-            <button class="btn btn-primary">Ready to get strated?</button>
+            <button class="btn btn-primary">Get Strated</button>
           </div>
         </div>
         <div class="footer text-center lg:flex justify-between text-base-content mt-28 mb-14">
@@ -303,18 +306,25 @@
             <a class="link link-hover">Contact Us</a>
           </nav>
           <form>
-            <h6 class="text-2xl font-semibold text-black mb-10">Subscribe to our Newsletter  
+            <h6 class="text-2xl font-semibold text-black mb-10">Subscribe to our <br>
+              Newsletter  
             </h6>
-            <fieldset class="form-control w-80">
+            <fieldset class="form-control lg:w-80">
               <label class="label">
                 <span class="label-text">Enter your email address</span>
               </label>
-              <div class="join">
+              <div>
                 <input
                   type="text"
-                  placeholder="username@site.com"
-                  class="input input-bordered join-item" />
-                <button class="btn btn-primary join-item">Subscribe</button>
+                  placeholder="Enter Email"
+                  class="bg-transparent pb-10 border-b-2 border-black outline-none lg:mr-24" />
+                <button class="btn btn-circle bg-slate-700 text-white">
+                  <i class="fa-solid fa-chevron-right"></i></button>
+                <div class="flex gap-6 mt-12 justify-center">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
               </div>
             </fieldset>
           </form>
